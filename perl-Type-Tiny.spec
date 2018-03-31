@@ -33,7 +33,9 @@ make test
 %{perl_vendorlib}/Devel/TypeTiny
 %{perl_vendorlib}/Error/TypeTiny*
 %{perl_vendorlib}/Eval/TypeTiny*
-%{perl_vendorlib}/Reply/Plugin/TypeTiny*
+# We don't ship perl-Reply (yet)
+# Package the plugin if we ever do.
+%exclude %{perl_vendorlib}/Reply/Plugin/TypeTiny*
 %{perl_vendorlib}/Test/TypeTiny*
 %{perl_vendorlib}/Type
 %{perl_vendorlib}/Types
