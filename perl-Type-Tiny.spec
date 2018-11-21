@@ -1,5 +1,5 @@
 %define	modname	Type-Tiny
-%define	modver	1.002001
+%define	modver	1.004002
 
 Summary:	Tiny, yet Moo(se) compatible type constraint for Perl
 Name:		perl-%{modname}
@@ -11,23 +11,24 @@ Url:		http://search.cpan.org/dist/%{modname}/
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Exporter::Tiny)
 BuildRequires:	perl-devel
 
 %description
 Tiny, yet Moo(se) compatible type constraint for Perl
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -n %{modname}-%{modver} -p1
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+%__perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README Changes
