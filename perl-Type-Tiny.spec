@@ -12,6 +12,8 @@ Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{modver}
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Exporter::Tiny)
+BuildRequires:	perl(Math::BigFloat)
+BuildRequires:	perl(Text::Balanced)
 BuildRequires:	perl-devel
 
 %description
