@@ -4,10 +4,10 @@
 Summary:	Tiny, yet Moo(se) compatible type constraint for Perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		http://metacpan.org/pod/Type::Tiny
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
