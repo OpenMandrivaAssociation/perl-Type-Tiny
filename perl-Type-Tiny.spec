@@ -1,10 +1,10 @@
 %define	modname	Type-Tiny
-%define	modver	1.004002
+%define	modver	1.014000
 
 Summary:	Tiny, yet Moo(se) compatible type constraint for Perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
 Url:		http://metacpan.org/pod/Type::Tiny
