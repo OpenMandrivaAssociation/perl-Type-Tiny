@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	2
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
-Url:		http://metacpan.org/pod/Type::Tiny
+Url:		https://metacpan.org/pod/Type::Tiny
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
