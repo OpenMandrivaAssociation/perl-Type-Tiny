@@ -1,14 +1,13 @@
 %define	modname	Type-Tiny
-%define	modver	1.014000
 
 Summary:	Tiny, yet Moo(se) compatible type constraint for Perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
+Version:	2.006000
 Release:	3
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
 Url:		https://metacpan.org/pod/Type::Tiny
-Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TOBYINK/Type-Tiny-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Exporter::Tiny)
@@ -20,7 +19,7 @@ BuildRequires:	perl-devel
 Tiny, yet Moo(se) compatible type constraint for Perl
 
 %prep
-%autosetup -n %{modname}-%{modver} -p1
+%autosetup -n %{modname}-%{version} -p1
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor OPTIMIZE="%{optflags}"
